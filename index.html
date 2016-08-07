@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>jQuery.domTank</title>
+<style>
+html, body {
+	background: #ccc;
+}
+
+h1 {
+	text-align: center;
+	border-bottom: 1px solid #287efe;
+}
+
+div {
+	margin: 20px 40px;
+	padding: 10px;
+}
+
+#someElm_div {
+	background: #f89;
+}
+
+#anotherElm_div {
+	width: 300px;
+	height: 200px;
+	background-color: #eee;
+}
+
+table {
+	border-collapse: collapse;
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+th, td {
+	padding: 8px;
+	border: 1px solid #c0c;
+	min-width: 100px;
+}
+</style>
+</head>
+<body>
+<header>
+	<h1>
+		jQuery.domTank Example
+	</h1>
+</header>
+<div>
+	<p>
+		Click on a DOM element - the title above, the paragraph below, the square below it, and it will transform into a domTank.
+		<br/>
+		Once transformed, you can move it around the page and randomly shoot around. A black rectangle will show up on the
+		bottom right of the screen which you can use for your mouse controls. Put the cursor over it (the pointer will disappear),
+	</p>
+	<p>
+		and LEFT CLICK to move the left wheels forward, RIGHT CLICK to move the right wheels forward, CENTER CLICK to move both and
+		move your tank forward.
+	</p>
+</div>
+<div id="someElm_div">
+	<div id="anotherElm_div">
+		You can also use the arrow keys, or ASDW (old school) to move your domTank.
+		<br/>
+		<br/>
+		Press ENTER to fire.
+		<br/>
+		<br/>
+		Press ESC to remove the tank and start over.
+	</div>
+	<!-- <div id="tankControls"></div> -->
+	</div>
+	<br/>
+	<br/>
+<div style="width: 100px; height: 100px; background-color: blue;">
+</div>
+<table>
+	<thead>
+		<tr>
+			<th>
+				Header 1
+			</th>
+			<th>
+				Header 2
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				Data 0, 0
+			</td>
+			<td>
+				Data 1, 0
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Data 0, 1
+			</td>
+			<td>
+				Data 1, 1
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br/>
+<br/>
+<hr style="background: blue; height: 1px; width: 50%;" />
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.domTank.js"></script>
+<script>
+
+$(document).ready(function(){
+
+	// This page example lets the user click on any element on the page. (Clicking on the page without clicking on a child element won't do anything.)
+	$("*").not("html").not("body").bind("click", setTank);
+});
+
+function setTank(e) {
+	$(this).domTank();
+}
+</script>
+</body>
+</html>
