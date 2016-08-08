@@ -195,7 +195,7 @@
 					.css(opts.controlsCss)
 					.html(opts.controlsHtml);
 			} else {
-				$tankControls = opts.controls
+				$tankControls = $(opts.controls)
 					.css(opts.controlsCss)
 					.html(opts.controlsHtml);
 			}
