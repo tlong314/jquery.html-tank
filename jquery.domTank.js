@@ -18,7 +18,7 @@
 	/**
 	 * @description Initializes and creates the tank.
 	 * @param {Object} options - A list of options that the developer can use to modify the resulting tank.
-	 * @returns The current jQuery object (wrapping the affected DOM element).
+	 * @returns {Object} The current jQuery object (wrapping the affected DOM element).
 	 */
 	$.fn.domTank = function (options) {
 		// One tank at a time. If tank has already been created, do not create a new one.
