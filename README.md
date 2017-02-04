@@ -1,6 +1,6 @@
 # jquery.domTank
 
-A jQuery plugin for turning any DOM element into a movable tank.
+A jQuery plugin for turning any HTML element into a movable tank.
 
 ## Usage
 
