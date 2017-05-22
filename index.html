@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8" />
-<title>jQuery.domTank</title>
+<title>jQuery.htmlTank</title>
 <style>
 html, body {
 	background: #ccc;
@@ -44,12 +44,12 @@ th, td {
 <body>
 <header>
 	<h1>
-		jQuery.domTank Example
+		jQuery.htmlTank Example
 	</h1>
 </header>
 <div>
 	<p>
-		Click on a DOM element - the title above, the paragraph below, the square below it, and it will transform into a domTank.
+		Click on a DOM element - the title above, the paragraph below, the square below it, and it will transform into an htmlTank.
 		<br/>
 		Once transformed, you can move it around the page and randomly shoot around. A black rectangle will show up on the
 		bottom right of the screen which you can use for your mouse controls. Put the cursor over it (the pointer will disappear),
@@ -61,7 +61,7 @@ th, td {
 </div>
 <div id="someElm_div">
 	<div id="anotherElm_div">
-		You can also use the arrow keys, or ASDW (old school) to move your domTank.
+		You can also use the arrow keys, or ASDW (old school) to move your htmlTank.
 		<br/>
 		<br/>
 		Press ENTER to fire.
@@ -109,7 +109,7 @@ th, td {
 <br/>
 <hr style="background: blue; height: 1px; width: 50%;" />
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.domTank.js"></script>
+<script type="text/javascript" src="scripts/jquery.html-tank.js"></script>
 <script>
 
 $(document).ready(function(){
@@ -119,7 +119,7 @@ $(document).ready(function(){
 });
 
 function setTank(e) {
-	$(this).domTank();
+	$(this).htmlTank();
 }
 </script>
 </body>
