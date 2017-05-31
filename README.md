@@ -1,19 +1,19 @@
-# jquery.domTank
+# jquery.htmlTank
 
 A jQuery plugin for turning any HTML element into a movable tank.
 
 ## Usage
 
-Include an external script reference to the jquery.domTank.js file after your jQuery reference. To turn a DOM element into a tank, reference the element with jQuery and apply .domTank(); to resulting object:
+Include an external script reference to the jquery.htmlTank.js file after your jQuery reference. To turn a visible HTML element into a tank, reference the element with jQuery and apply .htmlTank(); to the resulting object:
+
+```javascript
+$("#myDiv").htmlTank();
+```
+
+If you want to apply options, supply them as an argument in the htmlTank() method call, in the form of key-value pairs of an object:
 
 ```
-$("#myDiv").domTank();
-```
-
-If you want to apply options, supply them as an argument in the domTank() method call, in the form of key-value pairs of an object:
-
-```
-$("#myDiv").domTank({
+$("#myDiv").htmlTank({
     bulletSpeed : 2,
     keys: true,
     appendControlsTo: $("#myOtherDiv")
@@ -50,4 +50,4 @@ appendControlsTo {Object | string} - A DOM element (or a jQuery object represent
 
 ## License
 
-jQuery.domTank is available for use under the MIT license.
+jQuery.htmlTank is available for use under the MIT license.
