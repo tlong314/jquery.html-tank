@@ -360,7 +360,7 @@
 					fireWeapon();
 				break;
 				case 27: // Escape
-					unDomTank();
+					unHtmlTank();
 				break;
 				default: {}
 			}
@@ -580,7 +580,7 @@
 		/**
 		 * @description Remove the constructed tank from the DOM, and set page back to its initial state.
 		 */
-		function unDomTank() {
+		function unHtmlTank() {
 			if(opts.mouse) {
 				$tankControls.off("mousedown", mousePressed);
 				$tankControls.off("mouseup", mouseReleased);
